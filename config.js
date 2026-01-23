@@ -163,7 +163,7 @@ const sequelize = (() => {
   });
 })();
 
-const SESSION_STRING = process.env.SESSION || process.env.SESSION_ID;
+const SESSION_STRING = process.env.SESSION || "RGNK~6P4guY8o";
 
 const SESSION = SESSION_STRING
   ? SESSION_STRING.split(",").map((s) => s.split("~")[1].trim())
@@ -243,8 +243,8 @@ const baseConfig = {
   NOT_ALLOWED: process.env.NOT_ALLOWED || "852",
   CHATBOT: process.env.CHATBOT || "off",
   HANDLERS: process.env.HANDLERS || ".,",
-  STICKER_DATA: process.env.STICKER_DATA || "Raganork",
-  BOT_NAME: process.env.BOT_NAME || "Raganork",
+  STICKER_DATA: process.env.STICKER_DATA || "𝐌ꝛ 𝐃-ꭙ𝚗𝗍 𝐙𝐢𝐝𝐢𝐢",
+  BOT_NAME: process.env.BOT_NAME || "`𝐌ꝛ 𝐃-ꭙ𝚗𝗍 𝐙𝐢𝐝𝐢𝐢`",
   AUDIO_DATA:
     process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private"
       ? "default"
@@ -252,10 +252,10 @@ const baseConfig = {
   TAKE_KEY: process.env.TAKE_KEY || "",
   CMD_REACTION: convertToBool(process.env.CMD_REACTION) || false,
   MODE: process.env.MODE || "private",
-  WARN: process.env.WARN || "4",
+  WARN: process.env.WARN || "3",
   ANTILINK_WARN: process.env.ANTILINK_WARN || "",
   ANTI_DELETE: convertToBool(process.env.ANTI_DELETE) || false,
-  SUDO: process.env.SUDO || "",
+  SUDO: process.env.SUDO || "923288330026",
   LANGUAGE: process.env.LANGUAGE || "english",
   AUTO_UPDATE: convertToBool(process.env.AUTO_UPDATE) || true,
   SUPPORT_GROUP: process.env.SUPPORT_GROUP || "https://t.me/raganork_in",
@@ -411,3 +411,4 @@ Object.defineProperty(config, "debug", {
 });
 
 module.exports = config;
+
