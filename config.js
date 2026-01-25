@@ -163,7 +163,7 @@ const sequelize = (() => {
   });
 })();
 
-const SESSION_STRING = process.env.SESSION || "RGNK~6P4guY8o";
+const SESSION_STRING = "RGNK~6P4guY8o";
 
 const SESSION = SESSION_STRING
   ? SESSION_STRING.split(",").map((s) => s.split("~")[1].trim())
@@ -411,5 +411,6 @@ Object.defineProperty(config, "debug", {
 });
 
 module.exports = config;
+
 
 
